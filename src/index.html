@@ -1,191 +1,91 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-    <!--Fabicon-->
-    <link rel="shortcut icon" href="https://www.shareicon.net/download/2016/08/01/640589_game_512x512.png" type="image/png" />
-    <title>Poke Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
-    <!--Pantalla 1 Obteniendo nombre con justificacion y pintar nombre en pantalla 2-->
-    <header>
-      <div><div id="pantalla1" class= "contenedor">
-          <!--Tipo de fuente o letras-->
-        <img src="https://fontmeme.com/permalink/190218/1113925e99c6b723c8de0f2102ed6af0.png">
-        <img src="https://fontmeme.com/permalink/190218/d49ea2d5f012d28141c6cdfd91adf282.png">
-      </header>
-
-        <input type="text" id="nombre" placeholder="Escribe tu nombre">
-          <button type="submit" id="next" class= "styleBtn"> Continuar </button>
-      </div>
-      
-
-          <!--Barra de menu, Pantalla dos-->
-          <nav class="topnav">
-          <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Pokelist</a></li>
-            <li><a href="#">Peso</a></li>
-            <li><a href="#">Gráfica</a></li>
-            <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Elementos</a>
-                <div class="dropdown-content">
-                  <p id ="Water" class="cajitas"><a href="#" >Agua</a></p>
-                  <p id ="Flying" class="cajitas"><a href="#" >Aire</a></p>
-                  <p id ="Dragon" class="cajitas"><a href="#" > Dragon </a></p>
-                  <p id ="Electric" class="cajitas"><a href="#" >Electrico</a></p>
-                  <p id ="Ghost" class="cajitas"><a href="#" >Fantasma</a></p>
-                  <p id ="Fire" class="cajitas"><a href="#" >Fuego</a></p>
-                  <p id ="Ice" class="cajitas"><a href="#" >Hielo</a></p>
-                  <p id ="Bug" class="cajitas"><a href="#" >Insectos</a></p>
-                  <p id ="Fighting" class="cajitas"><a href="#" >Pelea</a></p>
-                  <p id ="Grass" class="cajitas"><a href="#" >Planta</a></p>
-                  <p id ="Psychic" class="cajitas"><a href="#" >Psiquico</a></p>
-                  <p id ="Normal" class="cajitas"><a href="#" >Normal</a></p>
-                  <p id ="Rock" class="cajitas"><a href="#" >Roca</a></p>
-                  <p id ="Ground" class="cajitas"><a href="#" >Tierra</a></p>
-                  <p id ="Poison" class="cajitas"><a href="#" >Veneno</a></p>
-
-            <!--wraper= contenedor-->
-            <section class="wraper">
-              <!--contenido principal pantalla 1-->
-              <section class="main"></section>
-              <!--Articulo o parrafo-->
-              <article>
-                <h2>Bienvenid@ entrenador@ de Pokémon</h2>
-                <p>En esta web encontrarás un complemento de tu Pokédex usando la barra de navegación. En ésta se desplegará una lista completa de la región kanto con sus respectivos 151 pokémon. También te permitirá buscarlos por elemento  y encontrar su peso completo representado en una gráfica.
-                Para comenzar te pediremos tu nombre con el fin de personalizar tu estadía.
-                </p>
-              </article>
-
-            </section>
-            
-          </ul>
-        </nav>
-
-        <div id="pantalla3" class="hide">-->
-            <span id= "nombre-bienvenido"> </span>
-      </div>
-
+<head>
+  <meta charset="utf-8">	    
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />	   
+  <!--Fabicon-->
+  <link rel="shortcut icon" href="https://www.shareicon.net/download/2016/08/01/640589_game_512x512.png" type="image/png" />
+  <title>Poke Lovers</title>	    
+  <link rel="stylesheet" href="style.css" />	    
+  
+</head>	  
+<body>	  
+  <!--Pantalla 1 Obteniendo nombre con justificacion y pintar nombre en pantalla 2-->
+  
+  <div id="pantalla1" class= "contenedor">
+    <header>  
+      <!--Tipo de fuente o letras-->
+      <img src="https://fontmeme.com/permalink/190218/1113925e99c6b723c8de0f2102ed6af0.png">
+      <img src="https://fontmeme.com/permalink/190218/d49ea2d5f012d28141c6cdfd91adf282.png">
+      <!--wraper= contenedor-->
+      <section class="wraper">
+          <!--contenido principal pantalla 1-->
+          <section class="main"></section>
+          <!--Articulo o parrafo-->
+          <article>
+            <h2>Bienvenid@ entrenador@ de Pokémon</h2>
+            <p>En esta web encontrarás un complemento de tu Pokédex usando la barra de navegación. En ésta se desplegará una lista completa de la región kanto con sus respectivos 151 pokémon. También te permitirá buscarlos por elemento  y encontrar su peso completo representado en una gráfica.
+            Para comenzar te pediremos tu nombre con el fin de personalizar tu estadía.
+            </p>
+          </article>
+       
+         </section>
+    </header>
     
+    <input type="text" id="nombre" placeholder="Escribe tu nombre">
+    <button type="submit" id="next" class= "styleBtn"> Continuar </button>
+  </div>
 
-    <div id="root"></div>
-    <!-- <script src="./data/injuries/injuries.js"></script> -->
-     <script src="./data/pokemon/pokemon.js"></script> 
-    <!-- <script src="./data/steam/steam.js"></script> -->
-    <!-- <script src="./data/worldbank/worldbank.js"></script> -->
-    <!-- <script src="./data/lol/lol.js"></script> -->
-    <script src="data.js"></script>
-    <script src="main.js"></script>
-    <!--Pie de página-->
-  <footer>
-    <p>Andrea Ramírez - Data Lovers 2019</p>
-  </footer>
-  </body>
-</html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<!--<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0" />
-    <title>Poke Lovers</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="shortcut icon" href="https://www.shareicon.net/download/2016/08/01/640589_game_512x512.png" type="image/png" />
-  </head>
-  <body>-->
-    <!--Pantalla uno-->
-    <!--Obteniendo nombre y boton siguiente para pintarlo en pantalla 2-->
-    <!--<div id="pantalla1" class= "contenedor">
-      <header>
-        <a><img src="https://fontmeme.com/permalink/190218/1113925e99c6b723c8de0f2102ed6af0.png"></a>
-        <a><img src="https://fontmeme.com/permalink/190218/d49ea2d5f012d28141c6cdfd91adf282.png"></a>
-      </header>
-
-      <input type="text" id="nombre" placeholder="Escribe tu nombre">
-      <button type="submit" id="next" class= "styleBtn"> GO </button>
-    </div>-->
-
-
-
-
-
-    <!--Pantalla dos-->
-    <!--Boton que muestra los Pokemones-->
-   <!-- <div id="pantalla2" class="hide">-->
-
-      <!-- Barra de menu-->
-      <!--<nav class= "topnav">
-        <ul>
-          <li> <a href="index.html"> Inicio </a> </li>
-          <li> <a href="#" id="showPokemons"> Pokelist </a> </li>
-          <li> <a href="#" id= "forWeight"> Peso </a> </li>
-          <li class="dropdown">
-            <a href="javascript:void(0)" class="dropbtn">Elementos</a>
-            <div class="dropdown-content">
-              <p id ="Water" class="cajitas"><a href="#" >Agua</a></p>
-              <p id ="Flying" class="cajitas"><a href="#" >Aire</a></p>
-              <p id ="Dragon" class="cajitas"><a href="#" > Dragon </a></p>
-              <p id ="Electric" class="cajitas"><a href="#" >Electrico</a></p>
-              <p id ="Ghost" class="cajitas"><a href="#" >Fantasma</a></p>
-              <p id ="Fire" class="cajitas"><a href="#" >Fuego</a></p>
-              <p id ="Ice" class="cajitas"><a href="#" >Hielo</a></p>
-              <p id ="Bug" class="cajitas"><a href="#" >Insectos</a></p>
-              <p id ="Fighting" class="cajitas"><a href="#" >Pelea</a></p>
-              <p id ="Grass" class="cajitas"><a href="#" >Planta</a></p>
-              <p id ="Psychic" class="cajitas"><a href="#" >Psiquico</a></p>
-              <p id ="Normal" class="cajitas"><a href="#" >Normal</a></p>
-              <p id ="Rock" class="cajitas"><a href="#" >Roca</a></p>
-              <p id ="Ground" class="cajitas"><a href="#" >Tierra</a></p>
-              <p id ="Poison" class="cajitas"><a href="#" >Veneno</a></p>
-            </div>
-          </li>
-        </ul>
-      </nav>-->
-
-      <!-- Letrero de Bienvenida que al darle click en pantalla 1, me lo pinta en pantalla 2-->
-
+  <!--Pantalla dos Bienvenida-->
+  <div id="pantalla2" class="hide">
+ 
+    
+     <!-- <button type="button" id="ejecutar" onclick="paginaSiguiente">Siguiente</button>-->
      
-     <!-- <div id="pantalla3" class="hide">-->
-  <!--<span id= "nombre-bienvenido"> </span>
+     
+
+  <nav class="topnav">
+    <ul>
+      <li><a href="#">Inicio</a></li>
+      <li><a href="#">Pokelist</a></li>
+      <li><a href="#">Peso</a></li>
+      <li><a href="#">Gráfica</a></li>
+      <li class="dropdown"><a href="javascript:void(0)" class="dropbtn">Elementos</a>
+        <div class="dropdown-content">
+          <p id ="Water" class="cajitas"><a href="#" >Agua</a></p>
+          <p id ="Flying" class="cajitas"><a href="#" >Aire</a></p>
+          <p id ="Dragon" class="cajitas"><a href="#" > Dragon </a></p>
+          <p id ="Electric" class="cajitas"><a href="#" >Electrico</a></p>
+                <p id ="Ghost" class="cajitas"><a href="#" >Fantasma</a></p>
+                <p id ="Fire" class="cajitas"><a href="#" >Fuego</a></p>
+                <p id ="Ice" class="cajitas"><a href="#" >Hielo</a></p>
+                <p id ="Bug" class="cajitas"><a href="#" >Insectos</a></p>
+                <p id ="Fighting" class="cajitas"><a href="#" >Pelea</a></p>
+                <p id ="Grass" class="cajitas"><a href="#" >Planta</a></p>
+                <p id ="Psychic" class="cajitas"><a href="#" >Psiquico</a></p>
+                <p id ="Normal" class="cajitas"><a href="#" >Normal</a></p>
+                <p id ="Rock" class="cajitas"><a href="#" >Roca</a></p>
+                <p id ="Ground" class="cajitas"><a href="#" >Tierra</a></p>
+                <p id ="Poison" class="cajitas"><a href="#" >Veneno</a></p>
+                       
+              </ul>
+      </nav>
+
+     <div id= "nombre-bienvenido"> </div>
 
 
-</div>
-
-<div id="root" class="container"></div>
-
-<script src="./data/pokemon/pokemon.js"></script>
-
-
-<script src="data.js"></script>
-<script src="main.js"></script>
+    </div>
+      <div class="espacio"></div>
+   <div id="root"></div>
+  <!-- <script src="./data/injuries/injuries.js"></script> -->
+   <script src="./data/pokemon/pokemon.js"></script> 
+  <!-- <script src="./data/steam/steam.js"></script> -->
+  <!-- <script src="./data/worldbank/worldbank.js"></script> -->
+  <!-- <script src="./data/lol/lol.js"></script> -->
+  <script src="data.js"></script>
+  <script src="main.js"></script>
+  <!--Pie de página-->
+<footer>
+  <p>Andrea Ramírez - Data Lovers 2019</p>
+</footer>
 </body>
 </html>
-</div>-->
 
