@@ -2,7 +2,7 @@ const btngetName = document.getElementById('next');
 const trainerName = document.getElementById('nombre');
 const bienvenido = document.getElementById('nombre-bienvenido');
 const sectionName = document.getElementById('pantalla1');
-const pantalla3 = document.getElementById('pantalla3')
+//const pantalla3 = document.getElementById('pantalla3')
 const pantalla2 = document.getElementById('pantalla2');
 const showPokemons = document.getElementById('showPokemons');
 const root = document.getElementById('root');
@@ -68,8 +68,8 @@ for (let i = 0; i < cajitas.length; i++) {
 }
 //funcion de peso 
 
-forPeso.addEventListener("click",() => {
-  console.log(forWeight)
+forWeight.addEventListener("click",() => {
+  //console.log(forWeight)
   const pokemonTotalPeso =  window.pokemon.totalWeightPokemon(dataPokemon);
   root.innerHTML= pokemonTotalPeso;
 
